@@ -1,7 +1,7 @@
 ﻿
 namespace Countries
 {
-    partial class Form1
+    partial class CountriesGame
     {
         /// <summary>
         ///  Required designer variable.
@@ -29,7 +29,7 @@ namespace Countries
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(CountriesGame));
             this.country_label = new System.Windows.Forms.Label();
             this.textBox = new System.Windows.Forms.TextBox();
             this.next_button = new System.Windows.Forms.Button();
@@ -62,6 +62,7 @@ namespace Countries
             this.файлToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.показатьРезультатыToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.рестартToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.label1 = new System.Windows.Forms.Label();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -75,14 +76,14 @@ namespace Countries
             // 
             // textBox
             // 
-            this.textBox.Location = new System.Drawing.Point(31, 104);
+            this.textBox.Location = new System.Drawing.Point(48, 103);
             this.textBox.Name = "textBox";
             this.textBox.Size = new System.Drawing.Size(112, 23);
             this.textBox.TabIndex = 1;
             // 
             // next_button
             // 
-            this.next_button.Location = new System.Drawing.Point(48, 164);
+            this.next_button.Location = new System.Drawing.Point(58, 164);
             this.next_button.Name = "next_button";
             this.next_button.Size = new System.Drawing.Size(79, 31);
             this.next_button.TabIndex = 2;
@@ -265,7 +266,7 @@ namespace Countries
             this.файлToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(185, 24);
+            this.menuStrip1.Size = new System.Drawing.Size(201, 24);
             this.menuStrip1.TabIndex = 3;
             this.menuStrip1.Text = "menuStrip1";
             // 
@@ -292,17 +293,27 @@ namespace Countries
             this.рестартToolStripMenuItem.Text = "Рестарт";
             this.рестартToolStripMenuItem.Click += new System.EventHandler(this.рестартToolStripMenuItem_Click);
             // 
-            // Form1
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(12, 39);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(180, 15);
+            this.label1.TabIndex = 4;
+            this.label1.Text = "Назовите столицу этой страны:";
+            // 
+            // CountriesGame
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(185, 247);
+            this.ClientSize = new System.Drawing.Size(201, 247);
+            this.Controls.Add(this.label1);
             this.Controls.Add(this.next_button);
             this.Controls.Add(this.textBox);
             this.Controls.Add(this.country_label);
             this.Controls.Add(this.menuStrip1);
             this.MainMenuStrip = this.menuStrip1;
-            this.Name = "Form1";
+            this.Name = "CountriesGame";
             this.Text = "Form1";
             this.Load += new System.EventHandler(this.Form1_Load);
             this.menuStrip1.ResumeLayout(false);
@@ -346,6 +357,7 @@ namespace Countries
         private System.Windows.Forms.ToolStripMenuItem файлToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem показатьРезультатыToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem рестартToolStripMenuItem;
+        private System.Windows.Forms.Label label1;
     }
 }
 

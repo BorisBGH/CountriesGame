@@ -10,7 +10,7 @@ using System.Windows.Forms;
 
 namespace Countries
 {
-    public partial class Form1 : Form
+    public partial class CountriesGame : Form
     {
         List<Country> countries = CountryStorage.GetAll();
         int count;
@@ -19,7 +19,7 @@ namespace Countries
         User user;
        
 
-        public Form1()
+        public CountriesGame()
         {
             InitializeComponent();
         }

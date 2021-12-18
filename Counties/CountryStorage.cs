@@ -27,6 +27,10 @@ namespace Countries
                  new Country("Россия", "Москва"),
                  new Country("Китай", "Пекин"),
                  new Country("США", "Вашингтон"),
+                 new Country("Непал", "Катманду"),
+                 new Country("Бутан", "Тхимпху"),
+                 new Country("Мадагаскар", "Антананариву"),
+                 new Country("Новая Зеландия", "Веллингтон"),
 
                 };
 

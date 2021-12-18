@@ -71,6 +71,7 @@ namespace Countries
             this.Controls.Add(this.askForName_label);
             this.Name = "WelcomeForm";
             this.Text = "Form2";
+            this.Load += new System.EventHandler(this.WelcomeForm_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

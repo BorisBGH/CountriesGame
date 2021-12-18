@@ -48,6 +48,7 @@ namespace Countries
 
                 country_label.Text = currentCountry.Name;
                 textBox.Text = string.Empty;
+
             
 
         }

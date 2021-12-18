@@ -26,15 +26,20 @@ namespace Countries
 
         private void start_button_Click(object sender, EventArgs e)
         {
-            if (InputChecker.CheckUserInput(name_textBox.Text))
+            if (!string.IsNullOrEmpty(name_textBox.Text) || !string.IsNullOrWhiteSpace(name_textBox.Text))
             {
                 userName = name_textBox.Text;
                 Close();
             }
             else
             {
-                MessageBox.Show("Введите имя, состоящее из букв");
+                MessageBox.Show("Введите имя");
             }
+        }
+
+        private void WelcomeForm_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

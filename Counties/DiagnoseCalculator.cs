@@ -22,7 +22,7 @@ namespace Countries
             }
              if (percentage < 60)
             {
-                return "Геграф глобус пропил...";
+                return "Географ глобус пропил...";
             }
              if (percentage < 80)
             {
